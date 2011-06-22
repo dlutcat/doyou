@@ -1,0 +1,5 @@
+#!/bin/bash
+
+killall python
+find ../python/ -name '*.pyc' -exec rm -fv {} \;
+python ../python/index.py
