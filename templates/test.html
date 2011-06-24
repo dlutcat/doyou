@@ -1,1 +1,11 @@
-{{ name }} World!
+$def with(form)
+{% extends 'layout.html' %}
+
+{% block maincontents %}
+
+<h1>User</h1>
+<form method="post">
+    $:form.render()
+</form>
+
+{% endblock %}
