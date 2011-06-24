@@ -6,8 +6,8 @@ from web import form
 from web.contrib.template import render_jinja
 
 import settings
+from models import *
 
-#render = web.template.render(settings.TEMPLATE_DIR)
 render = render_jinja(
     'templates',
     encoding='utf-8',
@@ -35,5 +35,7 @@ class test:
     
     def GET(self):
         return render.test(name='hello')
+
+d
 
 if __name__ == '__main__': app.run()

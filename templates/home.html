@@ -1,82 +1,53 @@
 {% extends 'layout.html' %}
-        <div class="block" id="wrapper"><!--start wrapper --> 
-            <div class="block" id="maincontents"><!--start maincontents --> 
-            <div class="maincontents_inner"> 
-            
-            
+{% block maincontents %}
+    <div class="maincontents_inner"> 
             <dl class="section" id="information"><!--start information --> 
                 <dt style="font-size:11px;">お知らせ</dt> 
                 <dd> 
                     <ul> 
-                                         
-                                                                                                                        <li><a href="/invite">お友だちをコトノハに招待してみませんか？</a></li> 
- 
-                    
-                    
-                    
- 
- 
-                                                                                                                            
+                        <li><a href="/invite">お友だちをコトノハに招待してみませんか？</a></li> 
                     </ul> 
-                      
                 </dd> 
             </dl><!--/information --> 
-            
-            
                         
             <dl id="hot20"><!--start hot20 --> 
                 <dt>HOT 20(1時間ごとに更新)</dt> 
                 <dd class="mainkotowrapper" style="padding-bottom: 0;"> 
-                                        <span class="koto_2" style="font-size: 13.73px;"><a href="/no/239890">「ありがとう」「ごめんなさい」って素直に言えない→○言える→×<nobr>(72)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_2" style="font-size: 13.03px;"><a href="/no/239980">あなたの仕事は立ち仕事〇　座り仕事×<nobr>(40)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_1" style="font-size: 12.82px;"><a href="/no/239991">あーー女ってめんどくさい…私も女だけどやっぱり…めんどくさい<nobr>(32)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_0" style="font-size: 13.27px;"><a href="/no/239954">おにぎりには焼き海苔→〇　味付け海苔→X<nobr>(50)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_0" style="font-size: 14px;"><a href="/no/239912">おにぎりの具、この二択ならどっちを選ぶ？ ○ツナマヨ ×明太子<nobr>(87)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_0" style="font-size: 12.7px;"><a href="/no/240010">これはペンですか?<nobr>(28)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_0" style="font-size: 12.98px;"><a href="/no/239964">しりとりであまり使わない言葉<nobr>(38)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_0" style="font-size: 13.51px;"><a href="/no/239901">ほぼ毎日、指輪をしていますか？<nobr>(61)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_0" style="font-size: 12.64px;"><a href="/no/240004">ほむほむ<nobr>(26)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_0" style="font-size: 12.67px;"><a href="/no/239994">を←温泉に入ろうとしている人に見える<nobr>(27)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_0" style="font-size: 12.67px;"><a href="/no/240008">ニュース以外はテレビを見なくても平気<nobr>(27)/nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_0" style="font-size: 12.93px;"><a href="/no/239999">机に飲み物を置いて授業や講義を受ける<nobr>(36)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_0" style="font-size: 13.39px;"><a href="/no/239905">江口愛実が実在しないと知って悲しくなった<nobr>(55)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_2" style="font-size: 12.79px;"><a href="/no/239973">火垂るの墓のおばさんが嫌い<nobr>(31)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_2" style="font-size: 12.76px;"><a href="/no/239992">男と女は、理解し合えない存在だと認識している→○違う→×<nobr>(30)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_0" style="font-size: 12.7px;"><a href="/no/239989">相手を負かすためなら冷凍庫を開ける<nobr>(28)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_0" style="font-size: 12.51px;"><a href="/no/239988">自分で分かる「クセ」はクセじゃない<nobr>(22)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_2" style="font-size: 13.03px;"><a href="/no/240001">虫を怖がる男の人<nobr>(40)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_1" style="font-size: 13.06px;"><a href="/no/239966">蚊は自分の手でしとめる主義<nobr>(41)</nobr></a></span> 
-                    <img src="/images/bullet.gif" alt="/" />                                        <span class="koto_0" style="font-size: 12.25px;"><a href="/no/240015">鯛焼きにかけるもの　○メープルシロップ　×きな粉＆黒蜜<nobr>(15)</nobr></a></span> 
-                                                            <p class="more"><img src="/images/pt_or.gif" alt="&raquo;" align="middle" />&nbsp;<a href="/hot" title="Hot koto 300 in 24h">more</a></p> 
+                    <span class="koto_2" style="font-size: 13.73px;">
+                        <a href="/no/239890">「ありがとう」「ごめんなさい」って素直に言えない→○言える→×<nobr>(72)</nobr></a>
+                    </span> 
+                    <img src="/images/bullet.gif" alt="/" />                                        
+                    <span class="koto_2" style="font-size: 13.03px;">
+                        <a href="/no/239980">あなたの仕事は立ち仕事〇　座り仕事×<nobr>(40)</nobr></a>
+                    </span> 
+                    <img src="/images/bullet.gif" alt="/" />                                        
+                    <span class="koto_1" style="font-size: 12.82px;">
+                        <a href="/no/239991">あーー女ってめんどくさい…私も女だけどやっぱり…めんどくさい<nobr>(32)</nobr></a>
+                    </span> 
+                    <img src="/images/bullet.gif" alt="/" />
+                    <p class="more">
+                        <img src="/images/pt_or.gif" alt="&raquo;" align="middle" />&nbsp;
+                        <a href="/hot" title="Hot koto 300 in 24h">more</a>
+                    </p> 
                 </dd> 
             </dl><!--/hot20 --> 
             
-                        <dl id="answeredkoto"><!--start answeredkoto --> 
+            <dl id="answeredkoto"><!--start answeredkoto --> 
                 <dt>回答したコトの更新情報</dt> 
                 <dd class="mainkotowrapper"> 
-                                            <span class="koto_2" style="font-size: 11.35px;"><a href="/no/239980">あなたの仕事は立ち仕事〇　座り仕事×<nobr>(40)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_2" style="font-size: 11.35px;"><a href="/no/240001">虫を怖がる男の人<nobr>(40)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_2" style="font-size: 11.46px;"><a href="/no/239890">「ありがとう」「ごめんなさい」って素直に言えない→○言える→×<nobr>(72)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_2" style="font-size: 11.3px;"><a href="/no/239992">男と女は、理解し合えない存在だと認識している→○違う→×<nobr>(30)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_1" style="font-size: 11.35px;"><a href="/no/239966">蚊は自分の手でしとめる主義<nobr>(41)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_2" style="font-size: 11.41px;"><a href="/no/230134">東京人はラーメンばかり食べているイメージがある（あくまでイメージ）<nobr>(55)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_2" style="font-size: 12.09px;"><a href="/no/65386">震度5以上の地震を体験したことがある<nobr>(398)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_1" style="font-size: 11.31px;"><a href="/no/239991">あーー女ってめんどくさい…私も女だけどやっぱり…めんどくさい<nobr>(32)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_2" style="font-size: 11.09px;"><a href="/no/240019">劇団ひとりとジェイ・チョウ(周杰倫)は似ていると思う。<nobr>(3)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_2" style="font-size: 11.31px;"><a href="/no/239973">火垂るの墓のおばさんが嫌い<nobr>(31)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_1" style="font-size: 12.11px;"><a href="/no/44083">5教科の並び順は，「国語・社会・数学・理科・英語」<nobr>(408)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_1" style="font-size: 11.47px;"><a href="/no/239747">絵が上手くなりたい?<nobr>(73)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_2" style="font-size: 11.38px;"><a href="/no/186467">理由もなく泣いてしまうことがある<nobr>(48)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_1" style="font-size: 11.81px;"><a href="/no/187064">触っていると気持ちがいいものってありますか？<nobr>(221)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_1" style="font-size: 13.39px;"><a href="/no/60347">1年以上、公衆電話を使ってません。<nobr>(1908)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_2" style="font-size: 13.01px;"><a href="/no/24362">我孫子が読める<nobr>(1342)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_2" style="font-size: 11.53px;"><a href="/no/114872">献血が好き。<nobr>(93)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_1" style="font-size: 14px;"><a href="/no/2366">Googleで検索することを「ググる」と言う<nobr>(2997)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_2" style="font-size: 12.13px;"><a href="/no/29078">100点と99点の差は大きい<nobr>(423)</nobr></a></span> 
-                        <img src="/images/bullet.gif" alt="/" />                                            <span class="koto_2" style="font-size: 11.53px;"><a href="/no/236564">「 (笑) 」の読み方　「しょう」→○　/　「わらい」、「かっこわらい」等その他→×<nobr>(93)</nobr></a></span> 
-                                                                                </dd> 
+                    <span class="koto_2" style="font-size: 11.35px;">
+                        <a href="/no/239980">あなたの仕事は立ち仕事〇　座り仕事×<nobr>(40)</nobr></a>
+                    </span> 
+                    <img src="/images/bullet.gif" alt="/" />                                            
+                    <span class="koto_2" style="font-size: 11.35px;">
+                        <a href="/no/240001">虫を怖がる男の人<nobr>(40)</nobr></a>
+                    </span> 
+                    <img src="/images/bullet.gif" alt="/" />                                            
+                    <span class="koto_2" style="font-size: 11.46px;">
+                        <a href="/no/239890">「ありがとう」「ごめんなさい」って素直に言えない→○言える→×<nobr>(72)</nobr></a>
+                    </span> 
+                </dd> 
             </dl><!--/answeredkoto --> 
-                        
             
             <dl class="section"> 
             <img src="/images/pt_or.gif" /> 
@@ -91,14 +62,11 @@
                 ○×にトラックバックしよー！
                 <a href="/doc/trackback">トラックバックについて</a> | <a href="/tb/recent">新着一覧</a> 
             </dl> 
- 
             
             <dl class="section"> 
             <img src="/images/pt_or.gif" /> 
             <a href="http://socialtunes.net/">モノ系ソーシャルもよろしくどうぞ！ → Socialtunes</a> 
             </dl> 
-            
-                        
                         
         </div> 
         
@@ -128,17 +96,24 @@
                 <dt>最近更新されたコト</dt> 
                     <dd class="kotowrapper"> 
                         <ul> 
-                                                        <li class="dot_orange"><span class="koto_0" ><a href="/no/210198" title="ペットロス症候群(5)">ペットロス症候群<nobr>(5)</nobr></a></span></li> 
-                                                        <li class="dot_orange"><span class="koto_0" ><a href="/no/160249" title="……それでは、ボクの最後のお願いです。……ボクのこと、忘れてください……。(66)">……それでは、ボクの最後のお願いです。……ボクのこと、忘れてください……。<nobr>(66)</nobr></a></span></li> 
-                                                        <li class="dot_orange"><span class="koto_0" ><a href="/no/209479" title="オッサン萌え(28)">オッサン萌え<nobr>(28)</nobr></a></span></li> 
-                                                        <li class="dot_orange"><span class="koto_0" ><a href="/no/239954" title="おにぎりには焼き海苔→〇　味付け海苔→X(50)">おにぎりには焼き海苔→〇　味付け海苔→X<nobr>(50)</nobr></a></span></li> 
-                                                        <li class="dot_orange"><span class="koto_0" ><a href="/no/93172" title="自分が知らないことはすべて嘘だと断言する奴(105)">自分が知らないことはすべて嘘だと断言する奴<nobr>(105)</nobr></a></span></li> 
-                                                        <li class="dot_orange"><span class="koto_0" ><a href="/no/209462" title="花を贈られると正直困ってしまう。(143)">花を贈られると正直困ってしまう。<nobr>(143)</nobr></a></span></li> 
-                                                        <li class="dot_orange"><span class="koto_0" ><a href="/no/109900" title="歯磨き粉と洗顔料のチューブを間違えたことがある(56)">歯磨き粉と洗顔料のチューブを間違えたことがある<nobr>(56)</nobr></a></span></li> 
-                                                        <li class="dot_orange"><span class="koto_0" ><a href="/no/34026" title="釣り(83)">釣り<nobr>(83)</nobr></a></span></li> 
-                                                        <li class="dot_orange"><span class="koto_0" ><a href="/no/240031" title="夏になると冬が恋しくなる(1)">夏になると冬が恋しくなる<nobr>(1)</nobr></a></span></li> 
-                                                        <li class="dot_orange"><span class="koto_0" ><a href="/no/209569" title="レーズンコッペパン(21)">レーズンコッペパン<nobr>(21)</nobr></a></span></li> 
-                                                    </ul> 
+                            <li class="dot_orange">
+                                <span class="koto_0" >
+                                    <a href="/no/109900" title="歯磨き粉と洗顔料のチューブを間違えたことがある(56)">歯磨き粉と洗顔料のチューブを間違えたことがある<nobr>(56)</nobr>
+                                    </a>
+                                </span>
+                            </li> 
+                            <li class="dot_orange">
+                                <span class="koto_0" >
+                                    <a href="/no/34026" title="釣り(83)">釣り<nobr>(83)</nobr></a>
+                                </span>
+                            </li> 
+                            <li class="dot_orange">
+                                <span class="koto_0" >
+                                    <a href="/no/240031" title="夏になると冬が恋しくなる(1)">夏になると冬が恋しくなる<nobr>(1)</nobr>
+                                    </a>
+                                </span>
+                            </li> 
+                       </ul> 
                     </dd> 
             </dl><!-- /recentkoto --> 
              
@@ -146,58 +121,25 @@
                 <dt>新着コト</dt> 
                 <dd class="kotowrapper"> 
                     <ul> 
-                                                <li class="dot_orange"><span class="koto_0" ><a href="/no/240031" title="夏になると冬が恋しくなる(1)">夏になると冬が恋しくなる<nobr>(1)</nobr></a></span></li> 
-                                            <li class="dot_orange"><span class="koto_0" ><a href="/no/240030" title="沖縄本島以外の国内の離島に行ったことがある(1)">沖縄本島以外の国内の離島に行ったことがある<nobr>(1)</nobr></a></span></li> 
-                                            <li class="dot_orange"><span class="koto_0" ><a href="/no/240029" title="自分の感受性くらい自分で守ればかものよ(2)">自分の感受性くらい自分で守ればかものよ<nobr>(2)</nobr></a></span></li> 
-                                            <li class="dot_orange"><span class="koto_0" ><a href="/no/240028" title="日本代表 犬養毅○VSカンボジア代表 猫ひろし×(1)">日本代表 犬養毅○VSカンボジア代表 猫ひろし×<nobr>(1)</nobr></a></span></li> 
-                                            <li class="dot_orange"><span class="koto_0" ><a href="/no/240027" title="コトノハのランダム機能を知っていた(6)">コトノハのランダム機能を知っていた<nobr>(6)</nobr></a></span></li> 
-                                            <li class="dot_orange"><span class="koto_0" ><a href="/no/240026" title="暑い時に熱いものを食べるのは、 ○…理にかなっていると思う ×…ただのやせ我慢だと思う(2)">暑い時に熱いものを食べるのは、 ○…理にかなっていると思う ×…ただのやせ我慢だと思う<nobr>(2)</nobr></a></span></li> 
-                                            <li class="dot_orange"><span class="koto_0" ><a href="/no/240025" title="教室に虫が入ってきて授業中断(4)">教室に虫が入ってきて授業中断<nobr>(4)</nobr></a></span></li> 
-                                            <li class="dot_orange"><span class="koto_0" ><a href="/no/240024" title="真っ赤なマニキュア(6)">真っ赤なマニキュア<nobr>(6)</nobr></a></span></li> 
-                                        </ul> 
-                    <p class="more"><img src="/images/pt_or.gif" alt="&raquo;" align="middle" />&nbsp;<a href="/all/sort=new" title="All koto">more</a></p> 
+                        <li class="dot_orange">
+                            <span class="koto_0" >
+                                <a href="/no/240027" title="コトノハのランダム機能を知っていた(6)">コトノハのランダム機能を知っていた<nobr>(6)</nobr>
+                                </a>
+                            </span>
+                        </li> 
+                        <li class="dot_orange">
+                            <span class="koto_0" >
+                                <a href="/no/240026" title="暑い時に熱いものを食べるのは、 ○…理にかなっていると思う ×…ただのやせ我慢だと思う(2)">暑い時に熱いものを食べるのは、 ○…理にかなっていると思う ×…ただのやせ我慢だと思う<nobr>(2)</nobr>
+                                </a>
+                            </span>
+                        </li> 
+                    </ul> 
+                    <p class="more">
+                        <img src="/images/pt_or.gif" alt="&raquo;" align="middle" />&nbsp;
+                        <a href="/all/sort=new" title="All koto">more</a>
+                    </p> 
                 </dd> 
             </dl><!--/newkoto --> 
- 
-            
                         
-            
-        </div><!-- /subcontents inner --> 
-        </div><!--/subcontents --> 
-        <div class="clear"></div> 
-        
-            <dl id="footermenu"> 
-        <dt class="hidden">メニュー</dt> 
-            <dd> 
-            <a href="/home">Home</a> | 
-            <a href="/user/dlutcat">Your kotolist</a> | 
-            <a href="/message">Message</a> | 
-            <a href="/inbox">Inbox</a> | 
-            <a href="/stream">Stream</a> | 
-            <a href="/hot">Hot</a> | 
-            <a href="/pop">Pop</a> | 
-            <a href="/all">All koto</a> | 
-                        <a href="/search">Search</a> | 
-            <a href="/post">Post</a> | 
-            <a href="/user/search">Users</a> 
-                        </dd> 
-    </dl> 
-        <div class="block" id="footer"><!--start footer --> 
-    <address> 
-    &copy;&nbsp;
-    <a href="http://solvalou.net/" title="Takashi OHIDA" class="gr">Takashi Ohida</a> 
-    </address> 
-    <div style="text-align:center; font-size:11px;"> 
-    <p> 
-    <a href="http://kotonoha.cc/">Kotonoha</a> 
-    |
-    <a href="http://socialtunes.net/">Socialtunes</a> 
-    </p> 
-            <br /> 
-</div><!--/footer --> 
-        </div><!--/wrapper --> 
- 
+{% endblock %}            
 </div><!--/container --> 
- 
-</body> 
-</html>
