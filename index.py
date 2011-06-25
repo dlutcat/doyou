@@ -8,14 +8,13 @@ from web.contrib.template import render_jinja
 import settings
 from models import *
 
-'''
 render = render_jinja(
     'templates',
     encoding='utf-8',
 )
 '''
-
 render = web.template.render('templates')
+'''
 
 urls = (
     '/', 'index',
