@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block maincontents %}
+
+<form action="/register/" method="POST">
+    <ul>
+        <li>
+            <label for="id_uname">用户名:</label>
+            <input id="id_uname" type="text" name="uname" />
+        </li>
+        <li>
+            <label for="id_uname">密码:</label>
+            <input type="password" name="password" />
+        </li>
+        <li>
+            <input type="submit" value="注册" />
+        </li>
+    </ul>
+</form>
+
+{% endblock %}
