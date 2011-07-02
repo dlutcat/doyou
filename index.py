@@ -3,7 +3,7 @@
 
 from flask import Flask, render_template, request
 app = Flask(__name__)
-
+app.config.from_envvar('DOYOU_SETTINGS', silent=True)
 
 @app.route('/')
 def index():
