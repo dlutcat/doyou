@@ -1,5 +1,5 @@
 #!/bin/bash
 
 killall python
-find ~/dev/doyou/ -name '*.pyc' -exec rm -fv {} \;
-python ~/dev/doyou/index.py
+find ~/dev/doyou/doyou -name '*.pyc' -exec rm -fv {} \;
+python ~/dev/doyou/doyou/index.py

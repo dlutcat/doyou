@@ -1,0 +1,1293 @@
+@charset "utf-8"; 
+/*
+コトノハCSS
+Last update May 28th 2006
+by purprin
+*/
+
+* {
+	margin: 0; padding: 0; 
+	font: normal normal normal 100%/1.5 Arial, Helvetica, "ヒラギノ角ゴ Pro W3", "ＭＳ ゴシック", sans-serif; 
+    word-break: break-all;
+}
+
+body {
+	max-width: 100%; 
+	max-height: 100%; 
+	text-align: center; 
+	color: #666; 
+	background: #f6f6ff url(/images/bg.png) repeat; 
+}
+
+.section {/*dlやdivなどの領域*/
+	display: block; 
+	margin: 0 0 10px 0; 
+	padding: 5px; 
+	border: 1px solid #e0e0e0; 
+	-moz-border-radius: 8px; 
+}
+
+.section2 {/*ddやp*/
+	display: block; 
+	margin: 0 0 10px 0; 
+	padding: 6px; 
+	border: 1px solid #e0e0e0; 
+	-moz-border-radius: 8px; 
+}
+
+.hidden {
+	display: none; 
+}
+
+.left {
+	float: left; 
+}
+
+.right {
+	float: right; 
+}
+
+.clear {
+	clear: both; 
+}
+
+.block {
+	display: block; 
+}
+
+.inline {
+	display: inline; 
+}
+
+.err {
+    color: red; 
+	margin: 0; padding: 4px 0; 
+}
+
+.success {
+    color: blue; 
+	margin: 0; padding: 4px 0; 
+}
+/*******************見出し*********************/
+h1 {
+	font-size: 18px; 
+	font-weight: bold; 
+	line-height: 1.3; 
+}
+
+h2 {
+	padding-bottom: 2px; 
+	font-size: 16px; 
+	font-weight: bold; 
+	line-height: 1.3; 
+	color: #393; 
+	background-color: #fff; 
+}
+
+h3 {
+	font-size: 13px; 
+	font-weight: bold; 
+	line-height: 1.3; 
+}
+
+h4 {
+	margin: 0 0 0 10px; 
+	font-size: 12px; 
+	font-weight: bold; 
+	line-height: 1.3; 
+}
+
+h5 {
+	margin: 0 0 0 10px; 
+	font-size: 13px; 
+}
+
+h6 {
+	margin: 0 0 0 10px; 
+	font-size: 13px; 
+}
+
+div.clear {
+	margin:0;
+	padding: 0;
+	line-height: 0;
+	font-size: 0;
+}
+/*******************見出しここまで*********************/
+/*******************アンカー*********************/
+a { color: #36f; text-decoration: none; }
+a:link		{ color: #36f; text-decoration: none; }
+a:visited	{ color: #36f; text-decoration: none; }
+a:active	{ color: #36f; text-decoration: none; }
+a:hover		{ color: #36f; text-decoration: underline; }
+
+address a, p.affiliation a, dd.kotowrapper a, dl.kotowrapper a, div.kotowrapper a, body#userlookup h3 a, div.userbox a, dd.prev a, dd.next a, dl#googlesearch a { color: #666; text-decoration: underline; }
+address a:link, p.affiliation a:link, dd.kotowrapper a:link, dl.kotowrapper a:link, div.kotowrapper a:link, body#userlookup h3 a:link, div.userbox a:link, dd.prev a:link, dd.next a:link, dl#googlesearch a:link { color: #666; text-decoration: none; }
+address a:visited, p.affiliation a:visited, dd.kotowrapper a:visited, dl.kotowrapper a:visited, div.kotowrapper a:visited, body#userlookup h3 a:visited, div.userbox a:visited, dd.prev a:visited, dd.next a:visited, dl#googlesearch a:visited { color: #666; text-decoration: none; }
+address a:active, p.affiliation a:active, dd.kotowrapper a:active, dl.kotowrapper a:active, div.kotowrapper a:active, body#userlookup h3 a:active, div.userbox a:active, dd.prev a:active, dd.next a:active, dl#googlesearch a:active { color: #36f; text-decoration: none; }
+address a:hover, p.affiliation a:hover, dd.kotowrapper a:hover, dl.kotowrapper a:hover, div.kotowrapper a:hover, body#userlookup h3 a:hover, div.userbox a:hover, dd.prev a:hover, dd.next a:hover, dl#googlesearch a:hover { color: #36f; text-decoration: underline; }
+
+/*******************アンカーここまで*********************/
+/*******************本文*********************/
+p {/*段落*/
+	margin: 4px 10px; 
+	padding: 0.2em 0; 
+	font-size: 12px; 
+	line-height: 1.1; 
+}
+
+strong {/*激しく強調*/
+	font-weight: bold; 
+}
+
+em {/*強調*/
+	font-weight: bold; 
+	text-decoration: underline; 
+}
+
+dfn, abbr, acronym {/*定義語,略語,頭字語*/
+	padding: 0.1em 0.2em; 
+	font-weight: bold; 
+	font-style: normal; 
+	border-bottom: 1px dotted #f00; 
+	cursor: help; 
+}
+
+pre, code, samp, var {/*整形済みテキスト,ソースコード,出力例,引数*/
+	font-family: 'Courier New', Courier, monospace; 
+	font-style: normal; 
+}
+
+kbd {/*キーボード入力文字列*/
+	margin: 0 0.4em; 
+	padding: 0.1em 0.5em; 
+	font-family: 'Courier New', Courier, monospace; 
+	font-style: normal; 
+	color: #666; 
+	background-color: #e0e0e0; 
+	border-top: 2px solid #ccc; 
+	border-right: 3px solid #666;	
+	border-bottom: 3px solid #666;	
+	border-left: 2px solid #ccc; 
+	vertical-align: middle; 
+}
+
+ins {/*追記*/
+	font-style: italic; 
+}
+
+del {/*削除*/
+	text-decoration: line-through; 
+}
+
+sup {/*上付き文字*/
+	font-size: 0.5em; 
+	vertical-align: super; 
+}
+
+sub {/*下付き文字*/
+	font-size: 0.5em; 
+	vertical-align: sub; 
+}
+
+hr {/*横罫線*/
+	border-top: 1px solid #e0e0e0; 
+}
+
+img {/*インライン画像*/
+	vertical-align: middle; 
+	border: none; 
+}
+/*******************本文ここまで*********************/
+/*******************フォーム*********************/
+legend {
+	display: none; 
+}
+
+fieldset {
+	margin: 0 0 10px 0; 
+	padding: 10px 16px; 
+	border: 1px solid #e0e0e0; 
+	-moz-border-radius: 8px; 
+}
+
+fieldset.main {/*1カラム表示のときのfieldset*/
+	width: 500px; 
+}
+
+input, textarea {
+	font-size: 12px; 
+	line-height: 1.2; 
+}
+
+fieldset dl {
+	margin: 0; padding: 0; 
+}
+
+fieldset dl dd {
+	padding: 2px 0; 
+}
+
+p.formsubmit {
+	margin: 0; padding: 0; 
+}
+
+p.formnote {
+	margin: 0; padding: 1px 0; 
+}
+
+/*******************フォームここまで*********************/
+/*******************引用ブロック*********************/
+blockquote {
+	margin: 20px 8px 20px 40px; 
+	padding: 8px; 
+	border-top: 1px dashed #ccc; 
+	border-right: 1px dashed #ccc; 
+	border-bottom: 1px dashed #ccc; 
+	border-left: 1px dashed #ccc; 
+	color: #999; 
+	background-color: #fff; 
+}
+
+blockquote p {
+	font-size: 11px; 
+}
+
+blockquote p cite {
+
+}
+/*******************引用ブロックここまで*********************/
+/*******************定義リスト*********************/
+dl {
+	font-size: 12px; 
+}
+
+dl dt {
+	padding-bottom: 3px; 
+	font-size: 14px; 
+	font-weight: bold; 
+	vertical-align: middle; 
+	line-height: 1.3; 
+}
+
+fieldset dl dt {
+	font-size: 13px; 
+}
+
+div#subcontents dt {/*サイドバーのタイトル*/
+	font-size: 16px; 
+	color: #393; 
+}
+
+dl dd {
+	font-size: 12px; 
+	vertical-align: middle; 
+}
+
+ul, ol {
+	list-style: none; 
+}
+
+ul li, ol li {
+	padding: 0.2em 0 0.2em 1em; 
+	font-size: 12px; 
+	line-height: 1.3; 
+	vertical-align: middle; 
+	list-style: none outside; 
+}
+
+ol li {
+	list-style: decimal inside; 
+}
+
+dt.main {/*メインコンテンツ内のdt*/
+	line-height: 1.3; 
+	color: #393; 
+}
+
+dt.sub {/*サブコンテンツ内のdt*/
+	font-size: 13px; 
+	line-height: 1.3; 
+	color: #393; 
+}
+
+li.dot_blue, li.dot_orange, li.pt_s, li.pt_r {/*アイコン付きリストアイテム*/
+	margin: 0 0 0 18px; 
+	padding: 0.2em 0 0.2em 0; 
+	font-size: 12px; 
+	vertical-align: middle; 
+	color: #666; 
+	background-color: #fff; 
+}
+
+li.dot_blue {
+	list-style: disc url(/images/dot_b.png) outside; 
+}
+
+li.dot_orange {
+	list-style: disc url(/images/dot_or.png) outside; 
+}
+
+li.pt_s {
+	list-style: disc url(/images/pt_s.gif) outside; 
+}
+
+li.pt_r {
+	list-style: disc url(/images/pt_r.gif) outside; 
+}
+/*******************定義リストここまで*********************/
+/*******************○×未回答*********************/
+span.koto_1 a { color: #039; text-decoration: none; padding: 2px 0; }
+span.koto_1 a:link { color: #039; text-decoration: none; padding: 2px 0; }
+span.koto_1 a:visited { color: #039; text-decoration: none; padding: 2px 0; }
+span.koto_1 a:active { color: #039; text-decoration: none; padding: 2px 0; }
+span.koto_1 a:hover { color: #fff; text-decoration: none; background-color: #039; padding: 2px 0; }
+
+span.koto_2 a { color: #903; text-decoration: none; padding: 2px 0; }
+span.koto_2 a:link { color: #903; text-decoration: none; padding: 2px 0; }
+span.koto_2 a:visited { color: #903; text-decoration: none; padding: 2px 0; }
+span.koto_2 a:active { color: #903; text-decoration: none; padding: 2px 0; }
+span.koto_2 a:hover { color: #fff; text-decoration: none; background-color: #903; padding: 2px 0; }
+
+span.koto_0 a { color: #666; text-decoration: none; padding: 2px 0; }
+span.koto_0 a:link { color: #666; text-decoration: none; padding: 2px 0; }
+span.koto_0 a:visited { color: #666; text-decoration: none; padding: 2px 0; }
+span.koto_0 a:active { color: #666; text-decoration: none; padding: 2px 0; }
+span.koto_0 a:hover { color: #fff; text-decoration: none; background-color: #666; padding: 2px 0; }
+
+span.comment {
+	color: #666; 
+	font-size: 10px; 
+}
+
+body#userlookup span.comment a {
+    color: #666!important;
+}
+
+/*******************○×未回答ここまで*********************/
+/*******************全体の構造*********************/
+div#container {/*コンテンツ全体を囲むコンテナボックス*/
+	margin: 0 auto 0 auto; 
+	padding: 10px 0 0 0; 
+	width: 742px; 
+	text-align: left; 
+	background-color: #fff; 
+	border-left: 1px solid #e0e0ff; 
+	border-right: 1px solid #e0e0ff; 
+}
+
+h1 {/*ロゴ*/
+	float: left; 
+	width: 350px; 
+	margin: 0; 
+	padding: 0; 
+	text-align: left; 
+	background-color: #fff; 
+}
+
+dl#header {/*ログイン時に表示されるメニュー*/
+	float: right; 
+	width: 300px; 
+	margin: 0; 
+	padding: 0; 
+	text-align: right; 
+	color: #666; 
+	background-color: #fff; 
+}
+
+dl#header dd ul li {
+	padding: 0 10px; 
+	font-size: 10px; 
+}
+
+dl#menu {/*メインメニュー*/
+	clear: left; 
+	width: 740px; 
+	margin: 0; 
+	padding: 0; 
+	font-size: 12px; 
+	line-height: 1.3; 
+	text-align: left; 
+	background-color: #fff; 
+}
+
+dl#menu dt {
+	display: none; 
+}
+
+dl#menu dd {
+	padding: 0 0 0 10px; 
+	width: 725px; 
+}
+
+dl#menu dd ul li {
+	display: inline; 
+	float: left; 
+	margin: 0; 
+	padding: 0px 10px 4px 0; 
+}
+
+div#wrapper {/*メインコンテンツとサブコンテンツを囲むボックス*/
+	width: 740px; 
+	margin: 0; 
+	padding: 0; 
+	border-top: 3px solid #e0e0e0; 
+	text-align: left; 
+	background-color: #fff; 
+}
+
+div#contents {/*１カラムメインコンテンツ*/
+	width: 740px; 
+	margin: 0; 
+	padding: 0; 
+	background-color: #fff; 
+}
+
+div#maincontents {/*２カラムメインコンテンツ*/
+	float: left; 
+	width: 540px; 
+	margin: 0; 
+	padding: 0; 
+	background-color: #fff; 
+}
+
+div#subcontents {/*サブコンテンツ*/
+	float: right; 
+	width: 200px; 
+}
+
+div.contents_inner {/*１カラムメインコンテンツの内側*/
+	margin: 0 10px; 
+	padding: 10px 0;
+	/*overflow: hidden;*/
+}
+
+div.maincontents_inner {/*２カラムメインコンテンツの内側*/
+	margin: 0 10px; 
+	padding: 10px 0; 
+	/*overflow: hidden;*/
+}
+
+div.subcontents_inner {/*２カラムサブコンテンツの内側*/
+	margin: 0 10px 0 1px; 
+	padding: 10px 0; 
+	/*overflow: hidden;*/
+}
+
+
+
+body#message div#maincontents {/*messageメインコンテンツ*/
+	float: right; 
+	width: 600px; 
+}
+
+body#message div#subcontents {/*messageサブコンテンツ*/
+	float: left; 
+	width: 140px; 
+}
+
+body#message div.maincontents_inner {/*messageメインコンテンツの内側*/
+	margin: 0 10px; 
+}
+
+body#message div.subcontents_inner {/*messageサブコンテンツの内側*/
+	margin: 0 1px 0 10px; 
+}
+
+p.page {/*ページ遷移*/
+	clear: both; 
+	margin: 5px 0; 
+	padding: 2px 0; 
+	border-top: 1px solid #e0e0e0; 
+	border-bottom: 1px solid #e0e0e0; 
+	font-size: 12px; 
+	text-align: right; 
+}
+
+div#footer {
+	clear: both; 
+	width: 740px; 
+	border-top: 1px solid #e0e0e0; 
+	text-align: left; 
+}
+
+address {
+	clear: left; 
+	padding: 6px 0 0 0; 
+	font-size: 12px; 
+	line-height: 1.2; 
+	text-align: center; 
+}
+
+p.affiliation {
+	margin: 0; 
+	padding: 0; 
+	font-size: 11px; 
+	text-align: center; 
+}
+
+dl#banner dd ul li {
+	float: left; 
+	width: 82px; 
+	margin-left: 10px; 
+	padding: 4px; 
+}
+/*******************全体の構造ここまで*********************/
+
+/*******************個別の装飾*********************/
+/*******************コトcloud*********************/
+.kotowrapper {
+	margin: 0 0 10px 0; 
+	padding: 5px 7px; 
+	border: 1px solid #e0e0e0; 
+	-moz-border-radius: 8px; 
+	line-height: 1.3; 
+}
+
+.more {
+	margin: 0; 
+	padding: 0 6px 2px 0; 
+	font-size: 11px; 
+	font-weight: bold; 
+	text-align: right; 
+	line-height: 1.0; 
+}
+/*******************コトcloudここまで*********************/
+dl#footermenu {
+	margin: 8px 0 0 0; 
+	padding: 4px 0; 
+	border-top: 1px solid #e0e0e0; 
+	font-size: 12px; 
+	text-align: center; 
+	line-height: 1.2; 
+}
+/*******************Setupここから*********************/
+dl#setup {
+	float: left; 
+	width: 400px; 
+	margin: 6px 0 0 20px; 
+	border-left: 1px dashed #e0e0e0; 
+}
+
+dl#setup dt {
+	clear: both; 
+	float: left; 
+	width: 100px; 
+	margin: 0  5px 8px 0; 
+    padding: 2px 0 0 10px;
+	font-size: 12px; 
+	line-height: 1.2; 
+	text-align: left; 
+}
+
+dl#setup dd {
+	float: left; 
+	width: 250px; 
+	margin: 0 0 8px 0; 
+	padding: 0; 
+	line-height: 1.2; 
+}
+/*******************Setupここまで*********************/
+/*******************ソートメニューここから*********************/
+.sort {
+	float: right; 
+	width: 200px; 
+	margin: 0; 
+	padding: 3px 0; 
+	text-align: right; 
+	line-height: 1.5; 
+}
+/*******************ソートメニューここまで*********************/
+/*******************index(トップページ)ここから*********************/
+fieldset#loginform {
+	padding: 10px 12px; 
+	border: 1px solid #e0e0ff;
+	background-color: #f9f9ff; 
+	overflow: hidden; 
+}
+
+fieldset#loginform dl dt {
+	font-size: 13px; 
+	color: #666; 
+}
+
+p.signup {
+	padding: 10px 6px; 
+	border: 1px solid #ffe0e0;
+    color: #f00; 
+    background-color: #fff6f6; 
+}
+
+p.signup a { color: #f00; }
+p.signup a:link { color: #f00; }
+p.signup a:visited { color: #f00; }
+p.signup a:active { color: #f00; }
+p.signup a:hover { color: #f00; }
+
+p.explain {
+	padding: 10px; 
+	font-size: 10px; 
+	line-height: 1.6; 
+	background-color: #f6f6f6; 
+}
+/*******************index(トップページ)ここまで*********************/
+/*****************homeここから*****************/
+body#home div#maincontents dl dt {
+	color: #393; 
+}
+
+body#home div#subcontents dl dt {
+	font-size: 13px; 
+	color: #393; 
+}
+
+dl#information {/*お知らせ*/
+	padding: 2px; 
+	border: 1px solid #ccf; 
+	background-color: #f9f9ff; 
+}
+
+dl#information dt {
+	padding: 2px 0 0 5px; 
+	font-size: 11px; 
+	color: #666!important; 
+}
+
+dl#information dd {
+	padding: 2px 5px; 
+}
+
+p.alert {/*新着通知*/
+	font-size:13px; 
+	font-weight: bold; 
+	text-align: center; 
+	border: 1px solid #ffe0e0; 
+	color: #ff0; 
+	background-color: #fff6f6; 
+}
+
+dl#homeprofile {/*プロフィールを囲んでいる部分*/
+	padding: 6px; 
+	font-size: 12px; 
+}
+
+dl#homeprofile dt.profileicon {/*プロフィールのアイコン部分*/
+	float: left; 
+	width: 50px; 
+	height: 50px; 
+	margin-right: 5px; 
+	text-align: center; 
+}
+
+dl#homeprofile dd.profileicon {
+	float: left; 
+	width: 120px; 
+	padding-top: 12px; 
+	line-height: 1.3; 
+}
+
+dt.marubatsu_cnt {
+	display: none; 
+}
+
+dd.marubatsu_cnt {
+	clear: left; 
+}
+
+dl#hot20 dd.mainkotowrapper {
+	border-left: 2px solid #f93; 
+}
+
+dl#answeredkoto dd.mainkotowrapper {
+	border-left: 2px solid #39f; 
+}
+
+dl#postedkoto dd.mainkotowrapper {
+	border-left: 2px solid #f36; 
+}
+
+dd.mainkotowrapper {/*homeのmaincontentsのそれぞれの枠の形*/
+	margin: 0 0 10px 0; 
+	padding: 5px 7px; 
+	border-top: 1px solid #e0e0e0; 
+	border-right: 1px solid #e0e0e0; 
+	border-bottom: 1px solid #e0e0e0; 
+	-moz-border-radius: 0 8px 8px 0; 
+	line-height: 1.3; 
+}
+
+dl#recentkoto dd,
+dl#newkoto dd {
+	/*overflow: hidden!important;*/
+}
+
+/*****************homeここまで*****************/
+/*****************SearchとPostここから*****************/
+.result {/*検索結果を表示する部分*/
+	border-top: 1px solid #e0e0e0; 
+    padding-top:10px;
+    padding-right:10px;
+}
+
+dl#kotopostcheck {/*postの確認画面*/
+	margin: 0 0 15px 0; 
+	padding: 0 0 15px 0; 
+}
+
+dl#kotopostcheck dt {/*postの確認画面の○×アイコン部分*/
+	float: left; 
+	width: 20px; 
+}
+
+dl#kotopostcheck dd {/*postの確認画面のコト表示部分*/
+	float: left; 
+	width: 420px; 
+	margin-left: 10px; 
+} 
+
+dd#streamusers {
+	padding: 6px 0; 
+}
+
+dl#streamusers dd ul li {
+	margin-left: 35px;
+}
+/*****************SearchとPostここまで*****************/
+/*****************InboxとStreamここから*****************/
+dl#subscribelist, dl#stream {
+	clear: left; 
+}
+
+body#kotostream div.userbox {
+	float: none; margin: 0; 
+}
+/*****************InboxとStreamここまで*****************/
+/*******************userlookupここから*********************/
+/*******************ユーザアイコン付見出し*********************/
+div#usertitle {
+	float: left; 
+	width: 590px; 
+	margin: 0 0 10px 0; 
+}
+
+div#usertitle h2 {/*顔写真を囲むボックス*/
+	float: left; 
+	width: 50px; 
+	margin: 0; 
+	padding: 0; 
+}
+
+div#usertitle2 {/*○×さんとプロフィールとURLを囲むボックス*/
+	float: left; 
+	width: 530px; 
+}
+
+div#usertitle2 h2 {/*○×さん*/
+	float: none; 
+	width: 510px; 
+	margin: 0; 
+	padding: 0 10px 6px 10px; 
+	line-height: 1.3; 
+}
+
+div#usertitle2 p, div#usertitle2 h3 {/*プロフィールとURL*/
+	float: none; 
+	width: 510px; 
+	margin: 0; 
+	padding: 0 10px 1px 10px; 
+	line-height: 1.2; 
+}
+/*******************ユーザアイコン付見出しここまで*********************/
+dl#ss {/*subscribeを選択させる部分*/
+	float: right; 
+	width: 120px; 
+	text-align: left; 
+}
+
+dl#ss dd ul li {
+	text-align: right; 
+	line-height: 1.3; 
+}
+
+div#koto_yes h3 {/*○アイコン*/
+	margin: 0; 
+	padding: 5px 0 3px 0; 
+	font-size: 20px; 
+	font-weight: bold; 
+	color: #36f; 
+}
+
+div.kotowrapperyes, div.kotowrapperno {
+	margin: 0 0 10px 0; 
+	padding: 5px 7px; 
+	-moz-border-radius: 8px; 
+	line-height: 1.1; 
+}
+
+div.kotowrapperyes {/*○のコトリストの枠*/
+	border: 1px solid #ccf; 
+}
+
+div#koto_no h3 {/*×アイコン*/
+	margin: 0; 
+	padding: 5px 0 3px 0; 
+	font-size: 20px; 
+	font-weight: bold; 
+	color: #ff8b6b; 
+}
+
+div.kotowrapperno {/*×のコトリストの枠*/
+	border: 1px solid #fcc; 
+}
+/*******************userlookupここまで*********************/
+/*******************usersearchここから*********************/
+.userbox {
+	float: left ; 
+	width: 70px; /*66にする？*/
+	height: 84px; 
+	overflow:hidden; 
+	border: 1px solid #fff; 
+	font-size: 10px; 
+	text-align: center; 
+}
+
+div.userbox div img {
+	margin: 0 0 4px 0; 
+}
+
+p.username {
+	margin: 0; 
+	padding: 0; 
+	font-size: 10px; 
+	line-height: 1.0; 
+}
+/*******************usersearchここまで*********************/
+/*******************kotolookupここから*********************/
+.prev {
+	float: left; 
+	padding: 0; 
+	margin: 0; 
+	width: 300px; 
+	text-align: left; 
+}
+
+.next {
+	float: right; 
+	padding: 0; 
+	margin: 0; 
+	width: 300px; 
+	text-align: right; 
+}
+
+#koto {
+	clear: both; 
+	text-align: center; 
+    width: 100%;
+    /*overflow: hidden;*/
+}
+
+h2.kototitle {/*コト名*/
+	color: orange; 
+	background-color: #fff; 
+	font-size: 40px; 
+	margin: 0 20px; 
+	padding: 10px 0 0 0; 
+	text-align: center; 
+}
+
+.test {/*testやedit*/
+	font-size: 12px; 
+	color: #393; 
+}
+
+dl#marubatsu {/*○×*/
+	margin: 13px auto; 
+	text-align: center; 
+}
+
+dd.marubox {/*○の入っているボックス*/
+	float: left; 
+	width: 345px; 
+	height: 80px; 
+	padding: 0; 
+	margin: 0; 
+	text-align: right; 
+}
+
+dd.batsubox {/*×の入っているボックス*/
+	float: right; 
+	width:345px; 
+	height: 80px; 
+	padding: 0; 
+	margin: 0; 
+	text-align: left; 
+}
+
+span#maru img,
+span#batsu img {/*○×クリッカブル領域*/
+	cursor: pointer; 
+}
+
+div#answered_block {/*解答したら表示される部分のボックス*/
+	clear: both; 
+	width: 720px; 
+	text-align: center; 
+}
+
+div#answered_block p {/*解答したら表示される部分の中身*/
+	margin: 0 ; 
+	padding: 0 auto; 
+	text-align: center; 
+	line-height: 1.2; 
+}
+
+span.flag0 {
+	color: #393; 
+	background-color: #fff; 
+	cursor: pointer; 
+}
+
+dl#googlesearch {
+}
+
+dl#googlesearch dt {
+	font-size: 10px; 
+	color: #fff; 
+}
+
+dl#googlesearch dd {
+	margin: 0 0 14px 0; 
+	padding: 3px 0; 
+	border-top: 1px solid #e0e0e0; 
+	border-bottom: 1px solid #e0e0e0; 
+	text-align: right; 
+}
+
+dl#googlesearch dd ul li{
+	display: inline; 
+}
+
+dl#commentsyes {/*○の人コメント全体のボックス*/
+	float: left; 
+	width: 350px; 
+	padding: 0; 
+	margin: 0; 
+}
+
+dl#commentsno {/*×の人コメント全体のボックス*/
+	float: right; 
+	width: 350px; 
+	padding: 0; 
+	margin: 0; 
+}
+
+ul.commentbox li {/*１人あたりのコメント表示領域*/
+	clear: both; 
+	margin: 0; 
+	padding: 0;
+}
+
+body#kotolookup div.userbox {/*コメント表示部分に出る顔写真のボックス*/	
+	float: left; 
+	width: 62px; 
+	height: 84px; 
+	margin: 4px 0; 
+	overflow:hidden; 
+	border: 1px solid #fff; 
+	font-size: 10px; 
+	text-align: center; 
+	line-height: 1.3; 
+}
+
+p.comment {/*コメントの本文*/
+	float: left; 
+	width: 265px; 
+	padding-left: 4px; 
+	margin: 4px 0; 
+}
+
+div#amazon, div#flickr, div#delicious {
+	padding: 0 4px;
+	margin-bottom: 5px; 
+}
+
+.itembox {/*Socialtunesのアイテムが表示されるボックス*/
+	float: left; 
+	width: 95px; 
+	height: 90px; 
+	border: 1px solid #ccc; 
+	margin: 0 5px 5px 0; 
+	overflow: hidden; 
+	line-height: 1.3; 
+	padding: 3px; 
+}
+
+dl#answeredusers {/*回答したユーザ*/
+	clear: both; 
+	margin: 10px 0 4px 0; 
+	padding: 8px 10px; 
+	border-top: 1px solid #e0e0e0; 
+}
+
+div#userlistwrapper {
+	margin: 0 auto; 
+	text-align: center; 
+	padding: 0 10px; 
+}
+/*******************kotolookupここまで*********************/
+/*******************messageここから*********************/
+table, th, tr, td, thead, tbody, tfoot {
+	font-size: 12px; 
+}
+
+table {
+	border: none; 
+	border-collapse: collapse; 
+	border-spacing: 0; 
+	table-layout: fixed; 
+}
+
+th { 
+	padding: 2px 2px 0 2px; 
+	border-bottom: 1px solid #e0e0e0; 
+	font-size: 11px; 
+}
+
+td { 
+	padding: 3px 2px; 
+	border-bottom: 1px solid #e0e0e0; 
+}
+
+th.message_checkbox, td.message_checkbox {
+	width: 25px; 
+	text-align: center; 
+}
+
+th.message_from, td.message_from {
+	width: 100px; 
+	text-align: left; 
+}
+
+th.message_subject, td.message_subject {
+	width: 380px; 
+	text-align: left; 
+}
+
+th.message_date, td.message_date {
+	width: 60px; 
+	text-align: left; 
+}
+
+td.message_checkbox, 
+td.message_from, 
+td.message_subject, 
+td.message_date {/*メッセージ１つあたりのクリッカブル領域*/
+	cursor: pointer; 
+}
+
+div.message_preview, fieldset.message_preview {
+	margin: 0 0 10px 0; 
+	padding: 2px 8px 8px 8px; 
+}
+
+div.message_preview ul li {
+	margin: 0; 
+	padding: 0; 
+	font-size: 11px; 
+}
+
+body#message p.page {/*メッセージのページ遷移*/
+	margin: 0; 
+	padding: 1px 5px 0 0; 
+	border: none; 
+	font-size: 12px; 
+	text-align: right; 
+}
+
+body#message br {
+	height: 0.8em;
+	line-height: 1.5;
+}
+
+.mbox_input {
+	margin: 0; 
+	padding: 2px 0 5px 0; 
+	border-bottom: 1px solid #999; 
+}
+
+.mbox_input span {
+	font-size: 10px; 
+	cursor: pointer; 
+}
+
+.mbox_input input {
+	font-size: 11px; 
+}
+
+tbody.mlist:hover {
+	background-color: #f0f0ff; 
+}
+
+div.message_list {
+	padding: 2px 5px 5px 5px;
+	margin-top: 24px; 
+}
+
+div.message_preview {
+	margin-top: 24px; 
+}
+
+td.photo {
+	padding: 11px 0 0 0; 
+	border: none; 
+}
+
+td.subject { 
+	padding: 6px 2px 0 2px; 
+	font-size: 15px; 
+	border: none; 
+}
+
+td.datetime { 
+	padding: 0 2px 0 2px; 
+	font-size: 11px; 
+}
+
+td.message { 
+	border: none; 
+}
+
+li.message_preview {
+	padding: 0 0 2px 0;
+}
+/*******************messageここまで*********************/
+/*******************docここから*********************/
+dl.doc {
+	padding: 10px 12px;
+}
+
+dl.doc dt {
+	padding: 0; 
+	font-weight: normal; 
+	font-size: 13px; 
+}
+
+dl.doc dd {
+	margin: 0 0 4px 10px; 
+}
+
+body#magazine div#wrapper * {
+	font-size: 12px;
+}
+
+body#magazine div#wrapper p.more,
+body#magazine div#wrapper p.more a {
+	font-size: 10px;
+}
+
+.doc_text_r {
+	float: right;
+	width: 430px;
+}
+
+.doc_text_l {
+	float: left;
+	width: 430px;
+}
+
+div.doc_image_r {
+	float: right;
+	width: 240px;
+	text-align: left;
+	margin: 0 0 8px 0;
+}
+
+div.doc_image_l {
+	float: left;
+	width: 240px;
+	text-align: left;
+	margin: 0 0 8px 0;
+}
+
+div.doc_image {
+	float: left;
+	width: 220px;
+	text-align: left;
+	margin: 0 0 8px 0;
+}
+
+div.doc_image_r img,
+div.doc_image_l img,
+div.doc_image img {
+	padding: 8px;
+	border: 1px solid #e0e0e0;
+}
+
+div.doc_image {
+	margin-right: 5px;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+dl.owner_profile * {
+	font-size: 12px!important;
+}
+
+#may_offend {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+#may_offend a {
+    color: #999;
+}
+
+.creator_mark {
+    font-size: 12px;
+    color: red;
+}
+
+.selected_sort {
+    color: red;
+}
+
+table#functions {
+    margin:0 10px 0 10px;
+}
+
+table#fuctions th {
+    font-weight: bold!important;
+}
+
+table#functions td {
+    vertical-align: top;
+}
+
+body#doclingr p {
+    line-height: 1.7;
+}
+
+/* clearfix */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    }
+
+.clearfix {
+    display: inline-block;  /* not valid */
+    }
+
+/* Hides from IE-mac Hack \*/
+* html .clearfix {
+    height: 1%;
+    }
+
+.clearfix {
+    display: block;    /* overwrite */
+    }

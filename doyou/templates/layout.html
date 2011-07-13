@@ -1,0 +1,23 @@
+{% include 'header.html' %}
+<body id="home">
+
+    <div class="block" id="container"><!--start container -->
+
+        <div id="top">
+            {% include 'topmenu.html' %}
+        </div>
+
+        <div id="wrapper">
+            <div id="maincontents">
+            {% block maincontents %}{% endblock %}
+            </div>
+        </div>
+
+        <div id="footer">
+            {% include 'footer.html' %}
+        </div>
+
+    </div>
+
+</body>
+</html>
