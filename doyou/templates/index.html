@@ -1,13 +1,122 @@
-<!DOCTYPE html5>
-<html lang="zh-CN">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
-        <title>首页 - 独友</title> 
-        <meta name="description" content="来笃友勾搭吧。" /> 
-        <meta name="author" content="" />
-    </head>
-    <body>
-        <h1> Hello World</h1>
-    </body>
-</html>
+{% extends 'layout.html' %}
+{% block maincontents %}
+
+<div style="text-align: center; margin: 15px 0 0px 0; padding: 0;">
+  <img src="/static/images/top.png" title="OX" alt="来这里OOXX"/>
+  <p>截至目前本站已经发生了<strong style="font-size: 26px;" class="orange">1000000</strong>次OX</p>
+</div>
+
+<h2 style="color: green;">什么是OOXX？</h2>
+<div class="section f12">
+  コトノハは、様々なコト(キーワード)に対して○と×で答えていく、新感覚のコミュニティサイトです。 ○× を通して、自分と似た価値観の人を見つけたり、自分自身の新しい一面を発見できるかも知れません。
+        コトノハについてのみんなの○× → <a>見てみる</a>
+<br/>
+        ご登録・ご利用は無料です。どうぞお楽しみください。→ <a>登録はこちらから</a>
+</div>
+
+<h2 style="color: green;">人气OX</h2>
+<div class="section f12">
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+  <span class="koto_0">
+    <a>友達とぐらいなら回し飲みや直箸に抵抗はない(46)</a>
+  </span>
+  <img src="/static/images/bullet.gif" />
+
+</div>
+
+{% endblock %}            
+{% block sidebar %}
+<div id="sidebar">
+  <div>
+    <h2>登录</h2>
+    <form action="/login/" method="post">
+      <fieldset id="J_login_form">
+        <ul>
+          <li>
+            <label for="J_email">邮箱：</label>
+            <input id="J_email" type="email" name="email" placeholder="登录邮箱" />
+          </li>
+          <li>
+            <label for="J_password">邮箱：</label>
+            <input id="J_password" type="password" name="password" />
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </div>
+<div>
+{% endblock %}

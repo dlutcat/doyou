@@ -68,6 +68,15 @@ body {
     color: blue; 
 	margin: 0; padding: 4px 0; 
 }
+
+.f12 {
+    font-size: 12px;
+}
+
+.orange {
+    color: orange;
+}
+
 /*******************見出し*********************/
 h1 {
 	font-size: 18px; 
@@ -349,7 +358,7 @@ span.koto_2 a:visited { color: #903; text-decoration: none; padding: 2px 0; }
 span.koto_2 a:active { color: #903; text-decoration: none; padding: 2px 0; }
 span.koto_2 a:hover { color: #fff; text-decoration: none; background-color: #903; padding: 2px 0; }
 
-span.koto_0 a { color: #666; text-decoration: none; padding: 2px 0; }
+span.koto_0 a { color: #666; text-decoration: none; padding: 2px 0; cursor: pointer; }
 span.koto_0 a:link { color: #666; text-decoration: none; padding: 2px 0; }
 span.koto_0 a:visited { color: #666; text-decoration: none; padding: 2px 0; }
 span.koto_0 a:active { color: #666; text-decoration: none; padding: 2px 0; }

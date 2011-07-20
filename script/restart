@@ -2,4 +2,4 @@
 
 killall python
 find ~/dev/doyou/doyou -name '*.pyc' -exec rm -fv {} \;
-python ~/dev/doyou/doyou/index.py
+python ~/dev/doyou/runserver.py

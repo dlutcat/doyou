@@ -7,8 +7,9 @@ from doyou import app
 manager = Manager(app)
 
 @manager.command
-def hello():
-    print 'hello'
+def syncdb():
+    from doyou import database
+    database.init_db()
 
 if __name__ == "__main__":
     manager.run()
