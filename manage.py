@@ -11,5 +11,6 @@ def syncdb():
     from doyou import database
     database.init_db()
 
+
 if __name__ == "__main__":
     manager.run()
