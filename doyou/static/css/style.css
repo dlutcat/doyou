@@ -77,6 +77,22 @@ body {
     color: orange;
 }
 
+.w156 {
+    width: 156px;
+}
+
+.h24 {
+    height: 24px;
+}
+
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+}
+
 /*******************見出し*********************/
 h1 {
 	font-size: 18px; 
@@ -116,12 +132,30 @@ h6 {
 	font-size: 13px; 
 }
 
+label {
+        float: left;
+}
+
 div.clear {
 	margin:0;
 	padding: 0;
 	line-height: 0;
 	font-size: 0;
 }
+
+button {
+	background-color: #FFF;
+	background-image: -moz-linear-gradient(#FFFFFF, #F3F3F3);
+	border: 0 none;
+	color: #555;
+	cursor: pointer;
+	display: inline-block;
+	padding: 0 28px 2px;
+	text-align: center;
+	vertical-align: text-bottom;
+	z-index:1;
+}
+
 /*******************見出しここまで*********************/
 /*******************アンカー*********************/
 a { color: #36f; text-decoration: none; }
@@ -639,6 +673,31 @@ p.explain {
 	line-height: 1.6; 
 	background-color: #f6f6f6; 
 }
+
+.reg_left {
+    float: left;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.reg_left label {
+    display: block;
+    line-height: 32px;
+    margin-top: 22px;
+}
+
+.reg_right {
+    float: left;
+    width: 380px;
+}
+
+.reg_right input {
+    border: 1px solid #CCC;
+    height: 19px;
+    padding: 7px 0;
+    width: 220px;
+}
+
 /*******************index(トップページ)ここまで*********************/
 /*****************homeここから*****************/
 body#home div#maincontents dl dt {

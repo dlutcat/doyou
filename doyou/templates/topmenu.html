@@ -3,6 +3,7 @@
         <img src="http://kotonoha.s3.amazonaws.com/images/logo.png" alt="コトノハ"              title="コトノハ" width="160" height="44" />
     </a>
 </h1>
+{% if user %}
 <dl class="block" id="header">
     <dt class="hidden">Login menu</dt>
     <dd>
@@ -46,3 +47,10 @@
         </ul>
     </dd>
 </dl>
+{% else %}
+<div class="f12 r">
+  <a href="/signup/">注册</a>
+  <a href="/login/">登录</a>
+</div>
+<div class="clear"></div>
+{% endif %}

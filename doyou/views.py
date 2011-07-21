@@ -4,18 +4,28 @@
 from flask import render_template, request
 from doyou import app
 from doyou.database import db_session
+from doyou.libs.tools import get_param
+from doyou.models import User
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/register/', methods=['GET', 'POST'])
-def register():
+@app.route('/signup/', methods=['GET', 'POST'])
+def signup():
     error = None
     if 'POST' == request.method:
-        pass
+      email = get_param(request, 'email')
+      gender = get_param(request, 'gender')
+      nickname = get_param(request, 'nickname')
+      passwd = get_param(request, 'password')
+  
+      user = User(nickname, email, gender, passwd)
+      user.save()
+      session['user'] = user
+      return redirect(url_for('index'))
     else:
-        return render_template('register.html')
+        return render_template('signup.html')
 
 @app.route('/home/')
 def home():
