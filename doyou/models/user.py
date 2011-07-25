@@ -23,7 +23,8 @@ class User(Base):
   shorturl = Column(String(8))
   create_time = Column(TIMESTAMP, nullable=False)
 
-  def __init__(self, nickname, email, gender, password, avatar, profile, shorturl, create_time):
+  def __init__(self, nickname=None, email=None, gender=None, password=None, 
+              avatar=None, profile=None, shorturl=None, create_time=None):
     self.nickname = nickname
     self.email = email 
     self.gender = gender

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from flask import render_template, request
+from flask import render_template, request, redirect, url_for, abort
 from doyou import app
 from doyou.database import db_session
 from doyou.libs.tools import get_param
@@ -20,10 +20,17 @@ def signup():
       nickname = get_param(request, 'nickname')
       passwd = get_param(request, 'password')
   
-      user = User(nickname, email, gender, passwd)
-      user.save()
+      user = User(nickname, email, int(gender), passwd)
+      db_session.add(user)
+      #try:
+      db_session.commit()
       session['user'] = user
       return redirect(url_for('index'))
+      """
+      except:
+        print 'User signup error'
+        abort(500)
+      """
     else:
         return render_template('signup.html')
 
