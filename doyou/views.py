@@ -5,7 +5,7 @@ from flask import render_template, request, redirect, url_for, abort
 from doyou import app
 from doyou.database import db_session
 from doyou.libs.tools import get_param
-from doyou.models import User
+from doyou.models import User, Location
 
 @app.route('/')
 def index():
@@ -19,8 +19,11 @@ def signup():
       gender = get_param(request, 'gender')
       nickname = get_param(request, 'nickname')
       passwd = get_param(request, 'password')
+      province = get_param(request, 'province')
+      city = get_param(request, 'city')
   
-      user = User(nickname, email, int(gender), passwd)
+      location = Location(id=city)
+      user = User(nickname, email, int(gender), location, passwd)
       db_session.add(user)
       #try:
       db_session.commit()

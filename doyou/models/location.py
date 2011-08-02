@@ -14,7 +14,7 @@ class Location(Base):
   id = Column(Integer, nullable=False, primary_key=True)
   name = Column(String(128), nullable=False)
 
-  def __init__(self, id, name):
+  def __init__(self, id=None, name=None):
     self.id = id
     self.name = name
 

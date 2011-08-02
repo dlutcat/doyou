@@ -15,7 +15,6 @@ class User(Base):
   nickname = Column(String(30),nullable=False)
   email = Column(String(120), index=True)
   gender = Column(Integer, nullable=False)
-  location_id = Column(Integer, ForeignKey('location.id'), nullable=False) 
   location = relationship('Location', backref='users')
   password = Column(String(64), nullable=False)
   avatar = Column(String(1024))
@@ -23,12 +22,13 @@ class User(Base):
   shorturl = Column(String(8))
   create_time = Column(TIMESTAMP, nullable=False)
 
-  def __init__(self, nickname=None, email=None, gender=None, password=None, 
+  def __init__(self, nickname=None, email=None, gender=None, password=None, location=None,
               avatar=None, profile=None, shorturl=None, create_time=None):
     self.nickname = nickname
     self.email = email 
     self.gender = gender
     self.password = password
+    self.location = location
     self.avatar = avatar
     self.profile = profile
     self.shorturl = shorturl
